@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand font-tittle" href="#">Caribbean Paradise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Desplegar Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-md-flex justify-content-md-end " id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">Hotel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cards">Reservar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quotes">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imgs/bg_1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-3">Caribbean Paradise Hotel</h5>
+          <p class="fs-4">Reunimos todo el encanto del caribe para ti.</p>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="imgs/bg_2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-3">Hermosa playa</h5>
+          <p class="fs-4">Una de las mejores playas de nuestro país.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imgs/bg_3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-3">Disfrutelo en familia</h5>
+          <p class="fs-4">Regale a sus seres amados una experiencia inolvidable.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="col-md-12 text-center">
+        <p>Haz tu reservación</p>
+        <button type="button" class = "btn btn-primary btn-lg mt-3">Reservar</button>
+      </div>
+    </div>
+  </div>
+
+    <main class="container mb-5">    
+        <section class="row mt-5 d-flex justify-content-center">
+            <h2 class="col-md-6 text-center">Te ofrecemos</h2>
+        </section>
+        <section class="row mt-5">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img class="card-top-img" alt="Habitacion" src="imgs/habitacion.jpg" />
+                    <div class="card-body">
+                        <div class="card-title">Cómodas habitaciones</div>
+                        <p>Acondicionadas para garantizar que descanses como un bebé, 100% higiénicas y todo incluido.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img class="card-top-img" alt="Vistas" src="imgs/vista.jpg" />
+                    <div class="card-body">
+                        <div class="card-title">Hermosas vistas</div>
+                        <p>Te harán olvidarte de todos tus problemas, imagenes que las llevarás para siempre con tigo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img class="card-top-img" alt="Alberca" src="imgs/alberca.jpg" />
+                    <div class="card-body">
+                        <div class="card-title">Enorme alberca</div>
+                        <p>Una enorme alberca junto al mar para que la disfrutes por las noches o cuando tu lo desees.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-2 text-center">
+              <div class="p-5">
+                  <div class="">
+                      <form action="" method="post" class="w-100">
+                          <label for="txtEmail2" class="mr-3 pb-3">Necesitas información general del hotel? brindanos tu correo.</label>
+                          <input class="form-control" type="email" name="txtEmail" id="txtEmail2" placeholder="Tu Correo Electrónico" />
+                          <button class="btn btn-primary btn-lg mt-3">Solicitar</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+               
+            </div>
+            <section class="row mt-5 d-flex justify-content-center">
+                <h2 class="col-md-6 text-center">Nuestro encanto natural</h2>
+            </section>
+
+            <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/sl_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/sl_2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/sl_3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+
+            <div class="row text-center mt-5">
+              <form action="" method="post" class="col-md-6 col-lg-4 m-md-auto pb-5">
+                <label class="mb-3" for="txtEmail">Solicita nuestros precios</label>
+                <select class="form-select w-30" aria-label="Default select example">
+                  <option selected>Hab. Personal</option>
+                  <option value="1">Hab. Parejas</option>
+                  <option value="2">Hab. Familiar</option>
+                </select>
+                <input class="form-control mt-2" type="email" name="txtEmail" id="txtEmail2" placeholder="Tu Correo Electrónico" />
+                <button class="btn btn-primary btn-lg mt-2">Solicitar</button>
+              </form>
+            </div>
+
+        </section>
+    </main>
+    <footer class="container-fluid bg-dark text-white text-center p-5">
+      <p> Orlando Medina &copy; 2021 Desarrollo de Portales Web </p>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
